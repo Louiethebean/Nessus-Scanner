@@ -1,0 +1,88 @@
+# 📦 Nessus Tenable Installation Guide
+
+This GitHub repository provides a full step-by-step guide for installing **Nessus by Tenable** on Ubuntu/Debian systems, including download, installation, service configuration, and initial web setup.
+
+---
+
+## 🔧 System Requirements
+- OS: Ubuntu 18.04+, Debian 10+
+- Access: root or sudo privileges
+- Internet access to download packages and plugins
+- Ports: TCP 8834 (for Web UI)
+
+---
+
+## 🚀 Full Installation Steps
+
+### 1. Update System Packages
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### 2. Download the Nessus Installer
+Go to the [official download page](https://www.tenable.com/downloads/nessus) and copy the `.deb` link for your OS version.
+Then run:
+```bash
+wget -O Nessus.deb https://www.tenable.com/downloads/api/v1/public/pages/nessus/downloads/nessus-10.6.1-debian10_amd64.deb
+```
+
+### 3. Install the .deb Package
+```bash
+sudo dpkg -i Nessus.deb
+```
+If you get dependency errors, run:
+```bash
+sudo apt --fix-broken install -y
+```
+
+### 4. Start and Enable Nessus Service
+```bash
+sudo systemctl enable nessusd.service
+sudo systemctl start nessusd.service
+```
+
+### 5. Check the Service Status
+```bash
+sudo systemctl status nessusd
+```
+You should see it listed as "active (running)".
+
+### 6. Access the Nessus Web Interface
+Open your browser and go to:
+```
+https://localhost:8834
+```
+Or use your server’s IP:
+```
+https://<your-server-ip>:8834
+```
+> ⚠️ Accept the SSL warning if using the self-signed certificate
+
+### 7. Activate Nessus
+- Choose **Nessus Essentials** (free) or enter a Professional/Manager key
+- To get a free activation code for Essentials, visit:
+  [https://www.tenable.com/products/nessus/nessus-essentials](https://www.tenable.com/products/nessus/nessus-essentials)
+
+### 8. Create an Admin User
+- Set up a username and password
+- Nessus will then begin downloading its plugin database (can take 5–10 minutes)
+
+### 9. Login and Start Scanning
+Once plugins are updated:
+- Log in to the web interface
+- Create a new scan
+- Choose a template (e.g., Basic Network Scan)
+- Enter target IPs or hostnames
+- Save and launch the scan
+
+---
+
+## 📚 References
+- [Tenable Downloads](https://www.tenable.com/downloads/nessus)
+- [Nessus Essentials Registration](https://www.tenable.com/products/nessus/nessus-essentials)
+- [Tenable Documentation](https://docs.tenable.com/nessus.htm)
+- [Tenable Developer Portal](https://developer.tenable.com/)
+
+---
+
+Deploy Nessus and take control of your vulnerability management today 🛡️
