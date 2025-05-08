@@ -112,7 +112,7 @@ Set your username and password. Nessus will download plugins, which may take 5â€
 
 ## ðŸ“„ License
 
-MIT License. See [LICENSE](LICENSE) for more info.
+MIT License. See [LICENSE] for more info.
 
 ---
 
