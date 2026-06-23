@@ -105,6 +105,17 @@ Set your username and password. Nessus will download plugins, which may take 5�
 
 ---
 
+## 🎯 What I Learned / Skills Demonstrated
+
+- **Vulnerability management fundamentals** — how a commercial-grade scanner like Nessus authenticates, schedules, and reports on findings, and where it fits in a broader vuln-management lifecycle.
+- **Linux service administration** — installing a `.deb` package with dependency resolution (`apt --fix-broken install`), managing it as a `systemd` service, and validating service health.
+- **TLS basics in practice** — working with self-signed certs on first run and understanding why the browser warning appears (and when that's acceptable vs. a red flag).
+- **Documentation as a deliverable** — turning a one-time manual install into a guide someone else (or future-me) can follow without re-deriving each step.
+
+**Problem solved:** removed the guesswork from a first-time Nessus install — a clean, repeatable path from a bare Ubuntu/Debian host to a working scanner ready for its first authenticated scan.
+
+---
+
 ## 📚 Resources
 
 - [Tenable Downloads](https://www.tenable.com/downloads/nessus)
