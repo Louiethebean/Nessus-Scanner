@@ -1,6 +1,10 @@
 # 🔍 Nessus Vulnerability Scanner Guide
 
+![License](https://img.shields.io/badge/license-MIT-blue) ![Platform](https://img.shields.io/badge/platform-Ubuntu%20%7C%20Debian-orange) ![Tool](https://img.shields.io/badge/tool-Nessus-005571)
+
 Welcome to the Nessus Automation and Installation Repository. This project provides everything needed to get started with **Tenable Nessus**, from basic installation on Ubuntu/Debian systems to API-based automation for scans, reports, and integrations.
+
+![Architecture](./architecture.svg)
 
 ---
 
