@@ -96,6 +96,30 @@ Set your username and password. Nessus will download plugins, which may take 5�
 
 ---
 
+## Tooling: Findings Report Parser
+
+`scripts/parse_nessus_report.py` turns a raw `.nessus` XML export into a severity-ranked Markdown or CSV report — the step that normally happens by hand after every scan.
+
+```bash
+python scripts/parse_nessus_report.py path/to/scan.nessus --min-severity 3 --format md
+```
+
+What it does:
+- Parses every `ReportHost`/`ReportItem` in the export (no API access needed — works on any exported `.nessus` file)
+- Ranks findings by severity, then CVSS base score, so the highest-risk items surface first
+- Extracts associated CVEs per finding
+- Outputs Markdown (for a quick triage doc) or CSV (for import into a tracker/spreadsheet)
+- Filterable by `--min-severity` so a daily digest can ignore informational noise
+
+Run the test suite (uses a bundled sample report, no live Nessus instance required):
+
+```bash
+pip install pytest
+pytest tests/
+```
+
+---
+
 ## Use Cases
 
 - Security team automation
