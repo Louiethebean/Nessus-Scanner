@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<NessusClientData_v2>
+  <Report name="Sample Scan">
+    <ReportHost name="10.0.0.5">
+      <ReportItem port="443" protocol="tcp" pluginID="51192" pluginName="SSL Certificate Cannot Be Trusted" severity="2">
+        <cvss_base_score>5.0</cvss_base_score>
+      </ReportItem>
+      <ReportItem port="22" protocol="tcp" pluginID="10267" pluginName="SSH Server Type and Version Information" severity="0">
+        <cvss_base_score>0.0</cvss_base_score>
+      </ReportItem>
+      <ReportItem port="445" protocol="tcp" pluginID="57608" pluginName="SMB Signing Disabled" severity="3">
+        <cvss_base_score>8.1</cvss_base_score>
+        <cve>CVE-2021-26414</cve>
+      </ReportItem>
+    </ReportHost>
+    <ReportHost name="10.0.0.8">
+      <ReportItem port="3389" protocol="tcp" pluginID="58453" pluginName="Terminal Services Doesn't Use Network Level Authentication (NLA) Only" severity="4">
+        <cvss_base_score>9.8</cvss_base_score>
+        <cve>CVE-2019-0708</cve>
+        <cve>CVE-2019-1182</cve>
+      </ReportItem>
+    </ReportHost>
+  </Report>
+</NessusClientData_v2>
