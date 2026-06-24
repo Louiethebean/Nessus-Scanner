@@ -1,4 +1,4 @@
-# 🔍 Nessus Vulnerability Scanner Guide
+# Nessus Vulnerability Scanner Guide
 
 ![License](https://img.shields.io/badge/license-MIT-blue) ![Platform](https://img.shields.io/badge/platform-Ubuntu%20%7C%20Debian-orange) ![Tool](https://img.shields.io/badge/tool-Nessus-005571)
 
@@ -8,17 +8,17 @@ Welcome to the Nessus Automation and Installation Repository. This project provi
 
 ---
 
-## 📘 What Is This?
+## What Is This?
 
 Nessus is one of the most trusted vulnerability scanners, used by professionals around the world to identify system weaknesses. This repository covers:
 
-- ✅ Full Nessus installation instructions
-- 📊 Scan configuration and reporting
-- 🔐 Credential and policy management
+- Full Nessus installation instructions
+- Scan configuration and reporting
+- Credential and policy management
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - Ubuntu 18.04+ or Debian 10+
 - Root or sudo access
@@ -27,7 +27,7 @@ Nessus is one of the most trusted vulnerability scanners, used by professionals 
 
 ---
 
-## 🚀 Installation Steps
+## Installation Steps
 
 ### 1. Update System
 
@@ -96,7 +96,7 @@ Set your username and password. Nessus will download plugins, which may take 5�
 
 ---
 
-## 💡 Use Cases
+## Use Cases
 
 - Security team automation
 - DevSecOps integration
@@ -105,7 +105,7 @@ Set your username and password. Nessus will download plugins, which may take 5�
 
 ---
 
-## 🎯 What I Learned / Skills Demonstrated
+## What I Learned / Skills Demonstrated
 
 - **Vulnerability management fundamentals** — how a commercial-grade scanner like Nessus authenticates, schedules, and reports on findings, and where it fits in a broader vuln-management lifecycle.
 - **Linux service administration** — installing a `.deb` package with dependency resolution (`apt --fix-broken install`), managing it as a `systemd` service, and validating service health.
@@ -116,7 +116,7 @@ Set your username and password. Nessus will download plugins, which may take 5�
 
 ---
 
-## 📚 Resources
+## Resources
 
 - [Tenable Downloads](https://www.tenable.com/downloads/nessus)
 - [Nessus Essentials Key](https://www.tenable.com/products/nessus/nessus-essentials)
@@ -125,10 +125,10 @@ Set your username and password. Nessus will download plugins, which may take 5�
 
 ---
 
-## 📄 License
+## License
 
 MIT License. See [LICENSE](./MIT%20License.txt) for more info.
 
 ---
 
-🚀 Secure your environment with Nessus — the gold standard in vulnerability scanning.
+Secure your environment with Nessus — the gold standard in vulnerability scanning.
